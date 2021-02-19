@@ -35,8 +35,8 @@ namespace Security.Cryptography
         string userNameToLogin = Console.ReadLine();
         System.Console.WriteLine("Enter Password");
         string passwordToVerify = Console.ReadLine();
-        bool veryfy = PasswordHasher.VerifyPassword(users, userNameToLogin, passwordToVerify);
-        string check = veryfy? "Login Success" : "Password Error";
+        bool verify = PasswordHasher.VerifyPassword(users, userNameToLogin, passwordToVerify);
+        string check = verify? "Login Success" : "Password Error";
         isLoginSuccess = veryfy;
         System.Console.WriteLine(check);
         }
